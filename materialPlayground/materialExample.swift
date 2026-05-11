@@ -23,43 +23,27 @@ struct materialExample: View {
             
             Text("Primary")
                 .font(.system(size: 50))
-                .fontWeight(.thin)
-                .foregroundStyle(.primary)
+                .fontWeight(.heavy)
+                .foregroundColor(.primary.opacity(0.32))
             
             Text("Secondary")
                 .font(.system(size: 50))
-                .fontWeight(.thin)
+                .fontWeight(.heavy)
                 .foregroundStyle(.secondary)
             
             Text("Tertiary")
                 .font(.system(size: 50))
-                .fontWeight(.thin)
+                .fontWeight(.heavy)
                 .foregroundStyle(.tertiary)
             
             Text("Quaternary")
                 .font(.system(size: 50))
-                .fontWeight(.thin)
+                .fontWeight(.heavy)
                 .foregroundStyle(.quaternary)
-            
-            Text("Thick")
-                .font(.system(size: 50))
-                .fontWeight(.thin)
-                .foregroundStyle(.thickMaterial)
-            
-            Text("Thin")
-                .font(.system(size: 50))
-                .fontWeight(.thin)
-                .foregroundStyle(.thinMaterial)
-            
-            Text("UltraThin")
-                .font(.system(size: 50))
-                .fontWeight(.thin)
-                .foregroundStyle(.ultraThinMaterial)
         }
         .padding([.leading, .trailing], 40.0)
         .padding([.top, .bottom], 20)
         .background(materialStyle, in: RoundedRectangle(cornerRadius: 15.0))
-        
     }
 }
 

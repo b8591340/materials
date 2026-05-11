@@ -9,31 +9,53 @@ import SwiftUI
 
 struct ContentView: View {
     @State var alternateGradient = false
-    
+
     @State var defaultColors: [Color] = [.pink, .red, .orange]
     @State var alternateColors: [Color] = [.pink, .purple, .blue]
-    
+
     var body: some View {
         NavigationView {
             ZStack {
-
                 LinearGradient(gradient: .init(colors: defaultColors), startPoint: .topLeading, endPoint: .bottomTrailing).edgesIgnoringSafeArea(.all)
                 LinearGradient(gradient: .init(colors: alternateColors), startPoint: .topLeading, endPoint: .bottomTrailing).edgesIgnoringSafeArea(.all)
                     .opacity(self.alternateGradient ? 0 : 1)
-                
+
                 ScrollView {
                     VStack(spacing: 20) {
+                        VisualEffectBlur(blurStyle: .regular, vibrancyStyle: .label) {
+                            VStack {
+                                Text("Primary")
+                                    .font(.system(size: 50))
+                                    .fontWeight(.heavy)
+                                    .opacity(0.32)
+
+                                Text("Secondary")
+                                    .font(.system(size: 50))
+                                    .fontWeight(.heavy)
+                                    .foregroundStyle(.secondary)
+
+                                Text("Tertiary")
+                                    .font(.system(size: 50))
+                                    .fontWeight(.heavy)
+                                    .foregroundStyle(.tertiary)
+
+                                Text("Quaternary")
+                                    .font(.system(size: 50))
+                                    .fontWeight(.heavy)
+                                    .foregroundStyle(.quaternary)
+                            }
+                        }.frame(height: 400)
                         materialExample(name: "UltraThin", materialStyle: .ultraThinMaterial)
                         materialExample(name: "Thin", materialStyle: .thinMaterial)
                         materialExample(name: "Regular", materialStyle: .regularMaterial)
                         materialExample(name: "Thick", materialStyle: .thickMaterial)
                         materialExample(name: "UltraThick", materialStyle: .ultraThickMaterial)
                     }
-
                 }
                 .padding([.leading, .trailing])
+                //.foregroundStyle(.blue.opacity(0.88))
             }
-            
+
             .navigationBarTitle("Materials", displayMode: .automatic)
             .navigationBarItems(trailing:
                 HStack {
@@ -46,9 +68,8 @@ struct ContentView: View {
                             .imageScale(.small)
                         Text("Switch Gradient")
                             .font(.caption)
-                        }
-                    )
-                    .foregroundStyle(.primary)
+                    })
+                        .foregroundStyle(.primary)
                 }
             )
         }

@@ -15,6 +15,7 @@
 		078BD0202673CDCC002D66EC /* materialPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078BD01F2673CDCC002D66EC /* materialPlaygroundUITests.swift */; };
 		07AD9C8E267440E1006593C8 /* materialExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD9C8D267440E1006593C8 /* materialExample.swift */; };
 		07C9EDA32673D465006D7826 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9EDA22673D465006D7826 /* test.swift */; };
+		172962D9268655F3007DA4DB /* VisualEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172962D8268655F3007DA4DB /* VisualEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		078BD0212673CDCC002D66EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07AD9C8D267440E1006593C8 /* materialExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = materialExample.swift; sourceTree = "<group>"; };
 		07C9EDA22673D465006D7826 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		172962D8268655F3007DA4DB /* VisualEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				078BD0022673CDCB002D66EC /* materialPlaygroundApp.swift */,
 				078BD0042673CDCB002D66EC /* ContentView.swift */,
+				172962D8268655F3007DA4DB /* VisualEffect.swift */,
 				07AD9C8D267440E1006593C8 /* materialExample.swift */,
 				07C9EDA22673D465006D7826 /* test.swift */,
 				078BD0062673CDCC002D66EC /* Assets.xcassets */,
@@ -267,6 +270,7 @@
 			files = (
 				078BD0052673CDCB002D66EC /* ContentView.swift in Sources */,
 				07C9EDA32673D465006D7826 /* test.swift in Sources */,
+				172962D9268655F3007DA4DB /* VisualEffect.swift in Sources */,
 				078BD0032673CDCB002D66EC /* materialPlaygroundApp.swift in Sources */,
 				07AD9C8E267440E1006593C8 /* materialExample.swift in Sources */,
 			);
@@ -427,7 +431,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"materialPlayground/Preview Content\"";
-				DEVELOPMENT_TEAM = AV5SY8KNA4;
+				DEVELOPMENT_TEAM = 333T5MZY79;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = materialPlayground/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -449,7 +453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"materialPlayground/Preview Content\"";
-				DEVELOPMENT_TEAM = AV5SY8KNA4;
+				DEVELOPMENT_TEAM = 333T5MZY79;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = materialPlayground/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
